@@ -264,3 +264,34 @@ ex;
 
 ----
 # unit4
+
+Some Machine Learning Methods?
+
+    1.Gradient Descent(1).
+      - method uses -> negative gradient direct as search direction.
+              -negative gradient direction -> fastest descent direction of the current one.
+  formula:<img width="270" height="37" alt="image" src="https://github.com/user-attachments/assets/da14ad24-4246-4428-a216-627b5e871b67" />
+  
+    - Eata (M) -> learning rate
+    - negative termm (M delta f (x))-> indicate change of w (weight parameter) in each             learning phase.
+    - Wk+1 -> new weight of the model (may be small or large)
+  <img width="252" height="202" alt="image" src="https://github.com/user-attachments/assets/78bbde1c-c869-4dc7-b7c8-b14d6a7cf7cb" />
+
+    2.Gradient Descent(2)
+      types;
+        1. Batch gradient descent(BGD)
+            - sum of the gradients of m samples of dataset at the point you train the model
+  eqauation:
+      <img width="367" height="80" alt="image" src="https://github.com/user-attachments/assets/730a4f57-dd06-4dab-a916-973a3697a1a5" />
+
+      2.Stochastic gradient descent(SGD)
+          - use random samples to calc new weight;
+  equation;
+    <img width="282" height="59" alt="image" src="https://github.com/user-attachments/assets/c2791582-98eb-4040-89f7-b9b63134d495" />
+      
+      3.Mini-batch gradient descent(MBGD)
+        cobine (BGD,SGD) to update the weight.
+  equation:
+    <img width="336" height="84" alt="image" src="https://github.com/user-attachments/assets/c1188ff4-c2f0-4def-aa77-32aa764e6c16" />
+
+    
