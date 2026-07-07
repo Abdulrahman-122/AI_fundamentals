@@ -294,4 +294,58 @@ Some Machine Learning Methods?
   equation:
     <img width="336" height="84" alt="image" src="https://github.com/user-attachments/assets/c1188ff4-c2f0-4def-aa77-32aa764e6c16" />
 
-    
+ What are the difference between Parameters + hyperparameters?
+
+     - Parameters -> are automatically learned by the model during historical data
+           so that ;
+              - the model can't function without them.
+              
+     - Hyperparameters -> are manually set (keys you set in order to control the training)
+           - neurons  or activation function,....
+           
+What are the Hyperparameter search general process?
+
+      -Divide dataset ->training set,validation set,test set.
+      -opimize model parameters using training set
+      - search for model hyperparameters using the validation set based on model performance matrics.
+
+What are some of the hyperparameter tuning methods?
+
+      1.Grid search;
+<img width="292" height="283" alt="image" src="https://github.com/user-attachments/assets/25b27fcd-ca51-476d-b296-e8a3c78246bf" />
+
+        -it performs an exhaustive search for all possible hyberparameters.
+        - it's manually specified.
+        - it's time consuming 
+      2.Random search:
+  <img width="286" height="265" alt="image" src="https://github.com/user-attachments/assets/4f4b33c3-8b82-4be4-a01f-aad4900038e1" />
+
+        - more appropriate than grid search if hyperparamaters are large.
+----
+  
+what is the Cross Validation?
+
+    - statistical analysis method -> check the performance of classifiers.
+    - it splits dataset ->traing+validation set.
+    - K-fold cross validation(k-fold cv)
+        - divide dataset into multi datasets(k)
+        -all of these group are considered validation set --> 1-k is the training set
+          note; average classification score of k models on each validation set are set a performance matrix for k-fold cv.
+            -k in k-fold cv (hyperparameter)
+            - k starts from 2 or 3 if the original dataset is small.
+  <img width="727" height="234" alt="image" src="https://github.com/user-attachments/assets/799b2f53-8491-437a-9298-39adeb556e79" />
+          
+            - we divide the training set into ks sets(ks(training,validation,1-k(test set))
+            - then put k=3(3 groups)
+              - start train 2 of them by the model(like k1,k2)
+              - then validate the remaining set(k3)
+              - then change the 2 sets for train and train  again(k2,k3)
+                - now validate by k1
+              - then change train to k1,k3 +validate by k2 
+              after all of these choses the best accuracy between them.
+  <img width="727" height="234" alt="image" src="https://github.com/user-attachments/assets/844e1127-3c72-4f07-9a33-6fd5f7fdbb6f" />
+
+
+-----
+# unit5
+->Common ML Algorithms:
