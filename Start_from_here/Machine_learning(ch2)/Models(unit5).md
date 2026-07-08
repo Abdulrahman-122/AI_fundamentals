@@ -40,9 +40,24 @@ What is the Logistic Regression?
     - overfitting in this type can be prevented by adding regularization term in loss 
     function (look at the notes)
 - <img width="464" height="69" alt="image" src="https://github.com/user-attachments/assets/528350f1-55a1-4ab1-94c7-4d513f6f1746" />
+
+
+
 - as you see there are two types (one with binary class (linear Regression),one with multi class(non linear)-> depend on softmax function)
   - <img width="756" height="305" alt="image" src="https://github.com/user-attachments/assets/8b670370-2167-4cd3-8202-8c78f9657b52" />
+     
+  -explain some info about softmax?
+<img width="757" height="252" alt="image" src="https://github.com/user-attachments/assets/a8c5adb7-0c0f-4494-a49f-5635456d878b" />
+
+      -it's uses a generalization term for logistic regression.
+      - compresses dimensional vectors from real values to another  values locate between(0,1).
 
   look at my notes here:
+
+
+
+-----
+2. Decision Tree:
+
+
   
-    
