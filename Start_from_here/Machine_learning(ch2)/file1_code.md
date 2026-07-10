@@ -21,4 +21,4 @@ ex;
 ----
 # Build models + train them on some datasets
     - follow me here you will understand everything if you stuck ask ai;
-  https://colab.research.google.com/drive/1VNHWopaSSKtf1riklWlzu0IKRA3n2cns#scrollTo=9anYHrE6PipJ
+https://colab.research.google.com/drive/1VNHWopaSSKtf1riklWlzu0IKRA3n2cns?usp=sharing
