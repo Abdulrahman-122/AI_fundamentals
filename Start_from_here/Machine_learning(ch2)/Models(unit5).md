@@ -59,5 +59,67 @@ What is the Logistic Regression?
 -----
 2. Decision Tree:
 
+- <img width="453" height="277" alt="image" src="https://github.com/user-attachments/assets/38d29523-b55a-4762-8afd-6dd55c1184b2" />
+<img width="553" height="383" alt="image" src="https://github.com/user-attachments/assets/3fd2863e-dcd1-4ff5-8539-3a91cbfafee2" />
 
-  
+      ```
+        - Any non-leaf node -> represent a test
+        - Any leaf node -> represent a class.
+        - branch -> represent the output of the test
+          the loop going from the root node (1st test) till leaf node(output class)
+        - Learning algorithms -> generate a descision tree with curt+ID2
+        
+      ```
+  How is Decision Tree working?
+
+      -it divide data of all features -> compare all result set according to purity.
+      -the data with highest purity is the selected one.
+      - we measure purity using;information entropy+GINI coefficient.
+        look at my note for the equations:
+      - this type is classification .
+  notes:
+  ???
+
+
+What is the process of constructing a Decision tree?
+  - <img width="855" height="321" alt="image" src="https://github.com/user-attachments/assets/a8cd6e7f-edb0-4cfd-8ced-552d748bb4f3" />
+      
+
+        1.feature selection-> select one of the features of the training data
+        2.Decision tree generation -> generate subnodes from top down based on selected feature+stop when no split 
+        3.Pruning -> pruning the decision tree in order to reduct size and to avoid overfitting.
+          (pruning include:pre-pruning+post-proning)
+    
+    
+---
+3.Support Vector Machine(SVM):
+    - <img width="518" height="204" alt="image" src="https://github.com/user-attachments/assets/f1cc0eec-f236-4c8c-8374-07cbe78d2506" />
+    -<img width="415" height="180" alt="image" src="https://github.com/user-attachments/assets/b090a3e8-0cca-4572-89a9-984a737f2b90" />
+
+
+        - this type is used in classification problems.
+        - used with linear classification (binary classification)
+        - also it used with non-linear classification using kernek trick
+        
+ How it's working?
+   1.Linear SVM
+   - <img width="751" height="218" alt="image" src="https://github.com/user-attachments/assets/53400ee2-b844-44d7-98b8-8872bc522c3b" />
+
+    - this type uses fixed line + keep the nearest point as far as possible from the line
+      - the nearby points called ; support vectors.
+        so the philosphys is -> keep 2 support vectors on max distances from  the line.
+    - note; in 2D we use straight line while in high dimension we use hyperplane 
+  2.Non-linear SVM
+     -<img width="399" height="314" alt="image" src="https://github.com/user-attachments/assets/df0dca79-f4fb-43f2-87ca-41d4d6259499" />
+      - output;
+        -<img width="471" height="261" alt="image" src="https://github.com/user-attachments/assets/34133a52-29c2-40d8-b497-9d88039bc3a0" />
+
+              - so SVM uses kernel function to be able to label the classes in this dataset.
+                - kerner -> Guassian kernel(the most used)
+              types of kernel functions?
+                1. Polynomial kernel.
+                2.Linear Kernel
+                3.Sigmoid kernel
+                4.Gaussian Kernel.
+----
+4.K-Nearest Neighbors Algorithm?
