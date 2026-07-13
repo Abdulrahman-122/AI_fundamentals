@@ -345,7 +345,3 @@ what is the Cross Validation?
               after all of these choses the best accuracy between them.
   <img width="727" height="234" alt="image" src="https://github.com/user-attachments/assets/844e1127-3c72-4f07-9a33-6fd5f7fdbb6f" />
 
-
------
-# unit5
-->Common ML Algorithms:
