@@ -123,3 +123,28 @@ What is the process of constructing a Decision tree?
                 4.Gaussian Kernel.
 ----
 4.K-Nearest Neighbors Algorithm?
+   - <img width="384" height="347" alt="image" src="https://github.com/user-attachments/assets/f5e455b0-1b86-446a-b140-dcb790fbbfc5" />
+
+          - if the closest samples to the current sample that we looking for it's class related to a category then that sample will belong to the same category.
+           - ex: the ? the most closest category to it is triangles then this ? will belong to them if we enlarge the class to include th squares then it will belong to them as there are 3 squares vs 3 traingles.
+         - Knn is a non-parametric method + used with datasets that have irregular decision boundries.
+         -knn => uses majority voting to predict classification
+               = it uses mean value to predict regression
+         - requires very large amount of computing.
+<img width="320" height="265" alt="image" src="https://github.com/user-attachments/assets/0c7eceaa-faff-4ca9-9600-d3acd7a5db74" />
+     
+
+           -From the image above => it's successeded to extract the green pixels inside the blue ones so this algorithm is efficient.
+
+notes;
+  - <img width="507" height="472" alt="image" src="https://github.com/user-attachments/assets/4bbffaf9-9f87-48e8-adb0-eb12b7af7b30" />
+
+    - as you see;
+      -   as k increase => impace of losses will be reduced but the difference between classes will be less obvious
+      -   so increasing K =>underfitting will increase because divisions between classes is more hard
+      -   so decreasing K => overfitting will increase because divisions between classes is now refined.
+     
+
+----
+5.Naive Bayes:
+    
