@@ -19,6 +19,6 @@ ex;
 
 
 ----
-# Build models + train them on some datasets
+# Build models + train them on some datasets(supervised models)
     - follow me here you will understand everything if you stuck ask ai;
 https://colab.research.google.com/drive/1VNHWopaSSKtf1riklWlzu0IKRA3n2cns?usp=sharing
