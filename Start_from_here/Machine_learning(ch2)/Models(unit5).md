@@ -147,4 +147,23 @@ notes;
 
 ----
 5.Naive Bayes:
-    
+
+- this type uses probability to classify objects (Bayes'theorem) using strong independant assumption between the features using this law:
+- <img width="371" height="60" alt="image" src="https://github.com/user-attachments/assets/526a336b-a4d6-43c2-b56b-b50cca64d7ad" />
+
+- this byes classifier assumes that -> the effect of an attribute value on a given class is independant of the values of the other attributes.
+  - so that the calculation became simple and we called it naive  .
+  - it's show high speed+accuracy when applied to large datasets.
+  - ex;
+  - <img width="838" height="728" alt="image" src="https://github.com/user-attachments/assets/dc668c88-2ffe-4fd5-99d6-110124078e9b" />
+  -<img width="748" height="754" alt="image" src="https://github.com/user-attachments/assets/f9c12fee-27e0-4927-8d8f-25bf8ab81d18" />
+  - <img width="826" height="393" alt="image" src="https://github.com/user-attachments/assets/97d689eb-2fde-4ae8-ae47-18c45dcfed37" />
+  so to rap up ;
+  -  this type of models doesn't depend on just the features of the class it depend on the probability of it even though the item has the same feature of that class
+    -  ex; frute is red+round+10cm as diemeter -> this is apple but Naive Bayes doesn't believe that untill he find the probability accroding to the whole classes.
+ 
+
+----
+6.Ensemble Learning
+
+  
