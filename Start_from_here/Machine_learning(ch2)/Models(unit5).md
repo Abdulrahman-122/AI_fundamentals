@@ -1,4 +1,4 @@
-# Supervised_Learning
+# Supervised_Learning (supervised Learning)
 
   1. Linear Regression(polynomial linear Regression):
       - <img width="447" height="252" alt="image" src="https://github.com/user-attachments/assets/805ea960-48ac-40bd-a75f-6ac78355f028" />
@@ -171,5 +171,22 @@ notes;
   -   once this process finished-> generalization capability of it is much strong than that signle learner.
   -   ex; if you asked thousends of experts about a question then you summaize it no doubt it will be hugh powerful than asking single expert.
 -   Types of Ensemble Learning:
-  -     Bagging;
-  -     Boosting:
+  -     Bagging-> build learners independently  on parallel way + averages their predictions
+            -   it's better than a single learner  due to small varience
+  -     Boosting=>builds learners sequencelly one by one (this is good as each model give th next one the cleaning dat
+          - this type has strong fitting but may increase overfitting.
+            - ex; AdaBoost,GBDT...
+a.Ensemble Learning(using Random forest)
+<img width="926" height="307" alt="image" src="https://github.com/user-attachments/assets/04cb92d7-1d90-4cd1-8682-faf929ecb040" />
+
+
+        - Random forest -> bagging+Regression and classification Tree(CART)
+        - this type ->builds  decision trees + aggregate their result to make prediction accurate + stable
+        - used for Regression(mean value)+classification(majority voting) problems
+b.Ensemble Learning(Gradient Boosted Decision Tree(GBDT))
+  - <img width="590" height="236" alt="image" src="https://github.com/user-attachments/assets/de5fdbc4-a6b0-4ce8-99d3-61965aae9653" />
+
+        - this type is dependent on Boosted technique -> you fit models by the data of the previous one if it found an error it tries to predict ouptut by reducing that error(loss function is small )
+        - each model tries to predict the value of the older one by reducing residual error (error between prediction,actual value)
+    
+  
