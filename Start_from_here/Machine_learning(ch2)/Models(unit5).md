@@ -165,5 +165,11 @@ notes;
 
 ----
 6.Ensemble Learning
+- <img width="529" height="301" alt="image" src="https://github.com/user-attachments/assets/16349a49-beab-4d73-872a-e21a36a0482f" />
 
-  
+  - it's way to learn+train multipl learners(models) at a time
+  -   once this process finished-> generalization capability of it is much strong than that signle learner.
+  -   ex; if you asked thousends of experts about a question then you summaize it no doubt it will be hugh powerful than asking single expert.
+-   Types of Ensemble Learning:
+  -     Bagging;
+  -     Boosting:
