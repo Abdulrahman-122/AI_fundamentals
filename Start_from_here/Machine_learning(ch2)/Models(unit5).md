@@ -173,6 +173,7 @@ notes;
 -   Types of Ensemble Learning:
   -     Bagging-> build learners independently  on parallel way + averages their predictions
             -   it's better than a single learner  due to small varience
+            - ex: Random forest
   -     Boosting=>builds learners sequencelly one by one (this is good as each model give th next one the cleaning dat
           - this type has strong fitting but may increase overfitting.
             - ex; AdaBoost,GBDT...
