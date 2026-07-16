@@ -8,7 +8,8 @@
               - also when a something has many factors this means  regression
               ex; an apartment has  factors like; area,price,size...
 look at my sketch:
-  ??
+<img width="631" height="808" alt="image" src="https://github.com/user-attachments/assets/301d69b2-e414-4e47-9247-bbc400c7fc7d" />
+
 
 
 Polynomial Regression what does it mean?
@@ -29,6 +30,7 @@ How to prevent overfitting from linear Regression or even polynomial one?
  - there are another one called without square(use absolute) uses in Lasso regression)
         
   - <img width="323" height="47" alt="image" src="https://github.com/user-attachments/assets/42ad346f-9475-44ae-bfaf-f78f90253f30" />
+
 
 ---
 What is the Logistic Regression?
@@ -55,6 +57,8 @@ What is the Logistic Regression?
   look at my notes here:
 
 
+<img width="726" height="848" alt="image" src="https://github.com/user-attachments/assets/e849f249-10ba-4d13-9ef1-3833d39cc783" />
+<img width="600" height="850" alt="image" src="https://github.com/user-attachments/assets/9a8a0e6a-078c-4e19-be2a-8cdb7c4bfb5d" />
 
 -----
 2. Decision Tree:
@@ -78,7 +82,9 @@ What is the Logistic Regression?
         look at my note for the equations:
       - this type is classification .
   notes:
-  ???
+
+  <img width="614" height="557" alt="image" src="https://github.com/user-attachments/assets/ace9858c-a7ae-4564-898e-6f21bd706b8a" />
+
 
 
 What is the process of constructing a Decision tree?
