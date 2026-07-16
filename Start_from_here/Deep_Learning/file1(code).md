@@ -213,6 +213,52 @@ now how to calc error and try to improve the model?
                   - tk => correct solution label
                   - it's used in classification problems.
              
-What is the Gradient Descent?
+What is the Gradient Descent Algorithm ?
+<img width="500" height="409" alt="image" src="https://github.com/user-attachments/assets/973a2019-0181-44c7-89c8-4737eb680a14" />
+
+    - it's a way that we uses to make model more optimal + more less error so that this Gradient decrease loss function.
+    - as the equation of Gradient increase -> the model is more optimal but not all the way there's a limit
+    note;
+      - this type of Gradient is no longer used due to -> it's convergence(movement)-> optimality is very slow as all training samples needs to calculated again once weight is updated.
+
+  so We moved to Batch Gradient Descent Algorithm?
+      how is  this algorithm working?
+        = <img width="794" height="239" alt="image" src="https://github.com/user-attachments/assets/9cbad691-a471-4b03-80ce-2a957914cee7" />
+
+          - X  this is the input
+          - t -> target output.
+          - o -> actual output
+          - eata M -> learning rate.
+          however ;
+            - this algorithm uses the entire dataset at each time we train the model on.
+            - each update is made toward correct direction 
+            cons;
+            - take learning time + more memory resources.
+  so we moved to Stochastic Gradient Descent Algorithm(SGD)?
+     - <img width="800" height="123" alt="image" src="https://github.com/user-attachments/assets/e51ac2c0-f244-473a-9ae1-9fa44b99f108" />
+     - this model solved the probelm of BGD where it was using  long time+ more memory to update the weight.
+     - now this Algorithm uses sample by sample + try to update weight  based on them.
+     - look the algorithm;
+     -  <img width="1016" height="311" alt="image" src="https://github.com/user-attachments/assets/50188b76-dd46-4b18-924c-fb61bebdfa93" />
+
+          -initialize small random w (weight)
+          - then select random sample 
+            - calc ouput based on it 
+            - then update weight.
+
+  Then we moved toward mini Batch Gradient Descent Algorithm ?
+      - this is the  Algorithm workflow.
+      - <img width="1643" height="538" alt="image" src="https://github.com/user-attachments/assets/fc1e0ef7-49f0-4d49-a43a-741aeb765634" />
+
+          - first this type uses small size of samples to train model on 
+            - then initialize w to 0
+            - then find actual output (o) based on input X
+            - then find weight
+            - then update the whole weight.
+            - this type is the mostly used + batch size  is usually set to 32.
+
+
+------
+What is the Netwrok Training Process?
 
 
