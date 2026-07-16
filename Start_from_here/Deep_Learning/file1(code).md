@@ -184,3 +184,33 @@ Now we now that
                     - map inputs between (0,1)
                     - the output of this function is interpreted using probability distribution  to deteremin different classifications.
 
+----
+How we can train DL models?
+   - first recall that -> ML models needs you as an engineer to make a lebels for them in order to extract all of these features from the image or whatever
+   - howeever Deep learning extract features from image based on problems he solved before
+
+let's deep dive ....
+
+- <img width="1513" height="562" alt="image" src="https://github.com/user-attachments/assets/16163528-77e3-48c6-9de0-15aae00766d6" />
+  - based on that -> training set -> put the feature that you want model to work on top of it
+  - then start validate by using validating set  to identify whether his performance at that thing or not.
+  - <img width="1325" height="290" alt="image" src="https://github.com/user-attachments/assets/a968741a-a2af-4262-a527-6a51f88cae7f" />
+now how to calc error and try to improve the model?
+  - we uses loss function to calc error.
+    -   by knowing the difference between predicted value+actual value  in both ML,DL
+    -   so you can know the performance of the model.
+    -   types;
+        1.  Main square error:
+        -   used for regression function;
+            - <img width="368" height="100" alt="image" src="https://github.com/user-attachments/assets/d9c9802e-5e32-40a9-a999-ac0be944dab8" />
+            - yk=> output of neural network
+            - k => number of data dimension
+            - t -> supervised learning data
+        2.Cross entropy loss function:
+            - <img width="359" height="108" alt="image" src="https://github.com/user-attachments/assets/5ca83aae-4a43-409d-84d1-5dffdd9bbda6" />
+              - y -> output of neural network.
+              - tk => correct solution label
+             
+What is the Gradient Descent?
+
+
