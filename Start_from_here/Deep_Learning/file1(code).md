@@ -208,8 +208,10 @@ now how to calc error and try to improve the model?
             - t -> supervised learning data
         2.Cross entropy loss function:
             - <img width="359" height="108" alt="image" src="https://github.com/user-attachments/assets/5ca83aae-4a43-409d-84d1-5dffdd9bbda6" />
-              - y -> output of neural network.
-              - tk => correct solution label
+    
+                  - y -> output of neural network.
+                  - tk => correct solution label
+                  - it's used in classification problems.
              
 What is the Gradient Descent?
 
