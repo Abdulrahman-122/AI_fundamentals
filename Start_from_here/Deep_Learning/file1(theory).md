@@ -261,4 +261,14 @@ What is the Gradient Descent Algorithm ?
 ------
 What is the Netwrok Training Process?
 
+```
+simply we uses that process to calc the output function by using chain rule;
 
+```
+- <img width="711" height="212" alt="image" src="https://github.com/user-attachments/assets/6dbc42fc-2489-4913-bc27-4e59dcb8817f" />
+- that's the chain rule;
+  - <img width="239" height="45" alt="image" src="https://github.com/user-attachments/assets/d6f28c47-5984-474a-9e97-b15f264c0f2b" />
+
+What is Vanishing and Exploing Gradients?
+
+  - Vanish
