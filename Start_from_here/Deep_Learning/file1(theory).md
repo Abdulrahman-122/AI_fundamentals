@@ -269,6 +269,145 @@ simply we uses that process to calc the output function by using chain rule;
 - that's the chain rule;
   - <img width="239" height="45" alt="image" src="https://github.com/user-attachments/assets/d6f28c47-5984-474a-9e97-b15f264c0f2b" />
 
-What is Vanishing and Exploing Gradients?
+What are  the Vanishing and Exploing Gradients?
 
-  - Vanish
+  - Vanishing Gradients
+    -   Derivative value of backward propagation reduce as the number of  network layers increases.
+  -   Exploding Gradients:
+    -     Derivative value of backward propagation increases as the number of network layers increase 
+
+notes;
+- these are errors happen due to using segmoid function  due to using large network(many layers +many chain rules like this
+  - <img width="369" height="96" alt="image" src="https://github.com/user-attachments/assets/1bc149be-e52a-4c8e-8aea-81b00846d43f" />
+- to solve Gradient Exploding -> use Gradient clipping (in order to clip the value of Gradient once it exceeds a threshold    )
+  - you can use weight regularization L1,L2
+  - you can use Relu function (if the  derivative of the activation func is 1 -> gradient vanishing+exploding will not occur)
+  - you can also use LSTM(long short  term memory )
+
+to rap up:
+  - to solve the problem of gradients use(Relu or regularization terms or LSTM)
+
+-----
+What is the optimizers?
+  - special methods we used to make neural  network most faster.
+  - Why are the optimizers used in OOP algorithms?
+    - Accelerate  algorithms
+    - Preventing+overshooting local extreme
+    - simplifying manual parameters (learning rate)
+    - ex;
+      -   SGD optimizers
+      -   AdaGrad
+      -   Adam ..
+      -   Momentum .
+  - What is the momentum Optimizer?
+      - <img width="363" height="40" alt="image" src="https://github.com/user-attachments/assets/e101dd50-af50-42e6-9758-b69833cc1901" />
+       - this optimizer added the second term to this equation (momentum term)
+         - alpha α is called: momentum coefficient.
+         - j -> neuron at first  layer ,i -> neuron at second layer.
+         - pros:
+             -   enhance the stability of the gradient +  reduces mutations.
+         - cons;
+             -   𝜂 , 𝛼  => these parameters will  need to be set and it will increase the parameters of the model.
+    - What is the AdaGrad Optimizer?
+      -  the bases that optimizer is built on -> to get different parameters you need to update learning rate which against momentum,SGD optimizers..
+      -  these are the parameters that must be added:
+        -  <img width="656" height="216" alt="image" src="https://github.com/user-attachments/assets/fc1d047a-a860-4f89-81d8-86a68da3c5d0" />
+        - from the image above:
+          - r continuously increase  => overall learning rate decreasing => number of updates will increase => we get closer to the optimal solution(learning spead slow)
+          - 
+      - Advantage:
+        - learning rate is  slow =>updates increases =>optimal solution
+      - Disadvantage:
+        - as learning rate got slower everytime -> so the efficientcy of the algorithm will decrease.
+       
+    - What is the RMSProp  Optimizer?
+      - it's an improved version of AdaGrad optimizer.
+        - it addes attenuation factor(𝛽) to the equaiton of square gradient accumulation.
+        - <img width="584" height="185" alt="image" src="https://github.com/user-attachments/assets/d5a19072-2a83-42a3-8056-f7a2a2f5146e" />
+        - <img width="584" height="185" alt="image" src="https://github.com/user-attachments/assets/1e4e865d-7f48-40a1-bb31-7f9e0be54147" />
+      
+               - this help adaGrad to end his optimization process too  early.
+              - used with RNN(recurrence  neural network)
+              - Disadvantages:
+              -   all of these factors need to be set at the process.
+  - What is The  Adam Optimizer??
+      - it's based on AdaGrad,AdaDelta
+      - control mt,vt they are called -> gradient's first moment+second moment(uncentered varience)
+      -<img width="336" height="87" alt="image" src="https://github.com/user-attachments/assets/ef5d716d-c1b5-42d1-8925-2b6173b1d172" />
+      - then we take the  derivate for them as mt,vt are both close to zero when B1,B2 =1
+      - so we got that <img width="194" height="120" alt="image" src="https://github.com/user-attachments/assets/f5bd4294-5bd0-4d55-b412-5dd21c9bdf19" />
+      - and this is the weight for it:
+        - <img width="250" height="80" alt="image" src="https://github.com/user-attachments/assets/82768c5f-3efc-44cf-b6b2-42b7e9ead525" />
+      - so at the  process of using this optimizer (initialization process) ->B1=0.9 ,B2=0.999 , E=10^-8,M(learning rate)=0.0001
+        - so that  learning rate  will be reduced at saturation level  (stanard optimizing)
+
+----
+
+Why can't the model learn very well especially when we test it with test set?
+
+  - this problem due to normalization branch of the model behind optimizations techniques aren't set  well.
+  - <img width="830" height="231" alt="image" src="https://github.com/user-attachments/assets/9294630e-e520-4b18-963f-b600c3a91245" />
+How actually overfitting occurs?
+  - due to -> small training set+  complex model so that model learn  the dataset many times  that cause to  learn noise inside that dataset =>then overfitting  occured .
+  - how to solve this problem?
+    - obtain more data + do preprocessing over it
+    - user a  proper  model
+      - reduce  network layer+neurons to  reduce the happening of fitting.
+      - Regularization -> it's done  by reducing the  weight that is  increasing during training
+      - reduce the training time(make evaluation test)
+      - Data cleaning+pruning.
+      - uses Bagging or Boosting (multi-model)
+    - Type of Regularizations?
+      - L1 Regularization.
+        - this way we is used to restrict increasing of thee weight.
+        - <img width="231" height="270" alt="image" src="https://github.com/user-attachments/assets/3a6bc420-e150-47ac-a7e8-abdfc69390b6" />
+        - <img width="322" height="48" alt="image" src="https://github.com/user-attachments/assets/e94072c7-71aa-4182-a7fa-6f42cf79341a" />
+            -  we added 2nd term in order to restrict the  weight (called absolute of w)
+              -   <img width="334" height="50" alt="image" src="https://github.com/user-attachments/assets/51d86f7e-3244-491e-83ea-d71e921bf6eb" />
+              - another  equatiion for the weight;  <img width="302" height="66" alt="image" src="https://github.com/user-attachments/assets/1f81fc0d-b744-43ba-9397-03228b2a92b0" />
+
+              - note ;
+                  - this L1 reduced the term of w   to 0 parameters which is good in  order  to restrict  the weights or the  parameters that model  learned
+
+      - L2 Regularization.
+        - <img width="278" height="205" alt="image" src="https://github.com/user-attachments/assets/56dde893-ce4b-4709-9d2d-d8aa3faae4f1" />
+        - however we added norm penalty to this equation (2nd term) to reduce the weights but this is better than L1 Normalization as you see the curv intersect with many weights so that the number of reduction is lower than L1 .
+        - <img width="373" height="54" alt="image" src="https://github.com/user-attachments/assets/e3a772d5-2565-43dc-8c18-e27d90ddb0fe" />
+          - this is overall value
+        - This is the output  weight ;
+          - <img width="302" height="48" alt="image" src="https://github.com/user-attachments/assets/683b9ae9-d796-4711-adf3-237fd29276ac" />
+            - this equation depends on E -> learning rate .
+           
+    - As we discussed above the L1,2 norm is good for make learning rate of the model good
+    - we can add this feature to restrict the model:
+      1. Stopping Training Early:
+        - it's to track the model once it get to a point where the training error  start to decrease but the testing one increase -> you  need to stop it
+        - then solve that   problem  in  order to make it good at testing +  avoid overfitting.
+        - <img width="478" height="302" alt="image" src="https://github.com/user-attachments/assets/10ff35ee-4d7c-4910-831d-a6339b656a6c" />
+      2.Dropout:
+        - <img width="669" height="304" alt="image" src="https://github.com/user-attachments/assets/2b576d7e-3fd5-4f96-b25f-781fe5186daf" />
+        - you start  by divide the model into sub networks
+          - then see the subnetwork that needs to update then update it's parameters and at the same  time stop updating the other subnetworks.
+          - then combine the whole subnetworks at the ends with eachother .
+            - the process;
+              - pick a random sample from  the hidden layer.
+              - delete the other neurons temporarly .
+              - go through that sample => update their parameters => store them
+              - then return the deleted neurons
+              - start again with  another random sample
+             
+            pros:
+              - effective process.
+              - can be used with non-deep learning models
+              - cheap
+             cons;
+                - not good with insufficient data.
+        3.you can use adversarial trainging,multi-tasklearning,ensamble learning,parameter sharing,semi-supervised learning to avoid overfitting....
+
+
+
+
+
+
+
+      
