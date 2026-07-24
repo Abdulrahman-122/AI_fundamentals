@@ -205,8 +205,58 @@ example on How LSTM uses decoder,encoder:
      
         
           her : it's related to law than application
-
+To rap up:
+- Encoder: Processes the entire input text at once to build a rich, contextual numerical          representation.
+- Decoder: Predicts and outputs text one token (word or piece of a word) at a time, building an output sequence.
+- Attention Mechanisms Bidirectional Self-Attention (Encoder): Allows every word token to look at both past and future words in the input text simultaneously to grasp complete context.
+- Masked Causal Self-Attention (Decoder): Blocks the model from looking at future tokens so it     behaves honestly during text generation without "cheating".
+- Cross-Attention (Decoder only): A special layer in the decoder that connects to the encoder's   output to look at the source text during tasks like translation.
 
 --------
 # Foundation Models:
 
+  - these are enhanced models built on top of the transformers
+  - it can handle single task execellent
+  - also it adapt new tasks fast .
+  - these foundational models -> increase the size of training + it can handle billion parameters + train them.
+  - ex:  GPT,Claude,GLM...
+
+  - How  is already GPT-1 working?
+    - <img width="449" height="397" alt="image" src="https://github.com/user-attachments/assets/b1acbf7a-337a-401a-9b03-a92d79cff89e" />
+      - this model uses Transformer in order to enhance it's memory on long terms + enhance the model on different tasks.
+      - it uses - decoder-encoder building blocks to build that model.
+        -so GPT-1 contain:
+          - 12 layers of Decoders .
+          - number of dimensions of Attention are 768,
+          - number of heads are 12
+          - hidden layers -> 3072
+          - parameters =117 million.
+          - postional encoding part of transformer not cosine,sin instead it's word vector
+          - update is performed during initialization.
+          - these are the important parts at the decoder :
+            - <img width="317" height="514" alt="image" src="https://github.com/user-attachments/assets/fadde56a-6601-4c37-87b2-493239977be2" />
+  - How is alread Beart Working?
+    - <img width="713" height="409" alt="image" src="https://github.com/user-attachments/assets/c218cb7d-5d52-4220-a91e-2aba0938231a" />
+      - this is another architecture
+        - it has 340 million parameters.
+        - it can answer complex questions.
+       notes;
+          - try to make the changing in weights at training don't effect that on real testing
+            - else this will make interference effect ( curve of learning of model will be lower  + speed of the model will be slow + the model will be poor )
+           
+------
+# What is MOE?
+  - Mixture of experts -> it's a bunch of foundational models with the same input and output.
+  - <img width="304" height="284" alt="image" src="https://github.com/user-attachments/assets/c0cdf710-82f3-4100-b080-f5c0c100a28b" />
+  - it has a good effective on the models => so that the final result is more better that that with the dense model (like GPT-1)
+  - simply : this model -> look at the input which model it's related to  -> based on that it will send that input to that model -> then generate answer for it .
+
+    notes;
+    - As the model became larger and the training is fewer -> this is better than (training is larger but the model is slower)
+      - that's what MEO achieve (large model+less training->make model efficient)
+      - so that this model save the alot of computational resources as the training get larger .
+      - 
+
+  - 
+  - 
+  - 
