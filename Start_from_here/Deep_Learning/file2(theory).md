@@ -255,8 +255,3 @@ To rap up:
     - As the model became larger and the training is fewer -> this is better than (training is larger but the model is slower)
       - that's what MEO achieve (large model+less training->make model efficient)
       - so that this model save the alot of computational resources as the training get larger .
-      - 
-
-  - 
-  - 
-  - 
