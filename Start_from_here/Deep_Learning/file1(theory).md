@@ -136,8 +136,8 @@ Now we now that
      2. Segmoid function
           - it's a frequently used function in Deep learning.
           - it maps input that has (- infinity,infinty) to (0,1) values
-            <img width="744" height="417" alt="image" src="https://github.com/user-attachments/assets/eaec076a-b4a0-4bf5-aac3-a7256164b455" />
-            
+            <img width="856" height="554" alt="image" src="https://github.com/user-attachments/assets/bfd08c85-a88f-4563-befe-76ac11bd7834" />
+
           - equation:
               <img width="549" height="125" alt="image" src="https://github.com/user-attachments/assets/75efa4e8-db24-4944-b332-18746ef8b5b0" />
               
