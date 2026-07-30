@@ -400,8 +400,11 @@ How actually overfitting occurs?
               - effective process.
               - can be used with non-deep learning models
               - cheap
-            cons;
-                - not good with insufficient dat
+           cons;
+              - not good with insufficient dat
+
+ -----
+in order to solve the problem of overfitting also: 
  3.you can use adversarial trainging,multi-tasklearning,ensamble learning,parameter sharing,semi-supervised learning to avoid overfitting....
 
 
