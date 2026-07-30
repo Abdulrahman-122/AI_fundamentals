@@ -7,6 +7,8 @@
     - CNN  uses parameter sharing(all elements of the images share the same  weights(parameters) so the cores of  the models when they are scanning the image ->their parameters are  fixed.
 - Architecture of CNN:
   - <img width="629" height="374" alt="image" src="https://github.com/user-attachments/assets/e6d2ad58-0879-4e85-ab90-bd850017695d" />
+
+```
     - you have two layers that forms the CNN:
       - Convolution layers.
       - Pooling layers
@@ -17,7 +19,10 @@
           - 1st convolution layer extract small features
           - multi-leyer neetwork ->can extract more complex features
       - what is the Relu layer?
-        - Relu(Rectified linear unit) is a  function may be used as activation function in this layer.
+        - Relu(Rectified linear unit) is a  function may be used as activation function in this layer
+```
+
+
       - What is the Pooling layer?
         - this layer take partition layers that came from convolution layer and try to extract smaller features again.
       - What is the Fully connected leyer?
