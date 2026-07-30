@@ -175,7 +175,8 @@ example on How LSTM uses decoder,encoder:
 
 - what is the Attention Mechanism?
   - it's mechanism used to focus on important things + ignore minor things.
-  - <img width="860" height="405" alt="image" src="https://github.com/user-attachments/assets/419a585d-4a37-495e-a224-0986804def60" />
+  - <img width="977" height="550" alt="image" src="https://github.com/user-attachments/assets/f9e6d0cc-39c8-4082-a68c-62c6c3387bf0" />
+
   - What is the Attention principle?
     - attention can be used without encoder-decoder framework
     - <img width="562" height="208" alt="image" src="https://github.com/user-attachments/assets/aea188a3-fef0-4ed5-a7ee-04f011c9b851" />
