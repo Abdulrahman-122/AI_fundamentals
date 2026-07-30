@@ -29,7 +29,7 @@
         - this  layer  combine both local features with each other to form global features in order to define the scores of each layer.
       - What is the output layer?
           - this layers output the final result.
-          - <img width="561" height="249" alt="image" src="https://github.com/user-attachments/assets/e2cce59b-42e9-451f-80b2-60c46b94302f" />
+- <img width="561" height="249" alt="image" src="https://github.com/user-attachments/assets/e2cce59b-42e9-451f-80b2-60c46b94302f" />
               - this is the result image (3*3) as you enter 3*3 filter.
            
 
