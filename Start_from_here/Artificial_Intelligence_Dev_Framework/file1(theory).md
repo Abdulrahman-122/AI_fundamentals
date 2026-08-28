@@ -84,3 +84,40 @@ Another advantages:
 
       - this allow storing data in a group in order to solve  the problem of huge data
         - so it make serialization  for data in order reduce disk I/O + network 
+    - According to the Model file:
+      - Inference model  -> support two types  of data -> training parameters+network models according to the file-format:
+        - checkpoint -> uses Protocol buffers format to store -> parameter  values on the default network.
+                  - also -> it can store the model structure
+        - .ONNX ->open neural network exchange => general expression for models.
+        - bin -> save+load models  and data.
+        - pt -> file format for pytorch in order to load a complete pytorch model.
+       
+- What is a Computational Graph?
+  - it's a way used to describe computational process in deep learning models.
+  - like adding a nodes for multiplications,addition....
+  - all of these helps you to analyze the entire stack.
+ 
+- What is the composition off the Computational Graph?
+  - tensors + operators are the building blocks of it
+  - <img width="646" height="133" alt="image" src="https://github.com/user-attachments/assets/19156a0e-000c-442b-bb34-086c36cbfe75" />
+  -  operator connected with edges in order to describe the tensors.
+
+
+- as we mention before
+  - computational graphs -> are a way to represent  neural network in a graph way in order to analyze it.
+    - <img width="443" height="298" alt="image" src="https://github.com/user-attachments/assets/e0773e1b-9777-43bc-ae1e-04ba955207ca" />
+
+- What is the difference between Dynamic/Static Computational Graph?
+  - static graph:
+    - graph structure of the graph is generated -> then computation operations involved in the graph.
+    - compiler uses technologies->to optimize graph+achieving high executing performance.
+  - Dynamic  graph:
+    - program is executed in the  coding sequence.
+    - the reverse diagram is generated based on backpropagation principle.
+    -  difficult to optimize but  it's good for generating graphes .
+
+- Pros+cons of Dynamic ,Static  Graphs:
+    - Dynamic Graphs:
+      - pros:
+        - instant executation ->graph are  computed in real time
+        - 
