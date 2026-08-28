@@ -119,5 +119,69 @@ Another advantages:
 - Pros+cons of Dynamic ,Static  Graphs:
     - Dynamic Graphs:
       - pros:
-        - instant executation ->graph are  computed in real time
-        - 
+        - instant execution ->graph are  computed in real time
+        - flexibility+it support varies data sizes+able  to  analyze complex operations.
+        - easy to debug.
+        - research friendly -> research uses it to iterate  over the experiments.
+        - easy to  understand.
+      - cons:
+        - dynamic  graph may use extra overhead -> lead to  lower performance while static one don't make this.
+    - Static Computational Graph:
+      - it's defined before running.
+      - pros:
+        - predefined ->the entire graph needs to be  running before execution.
+        - optimization  -> as  this graph is fixed so we can optimize it (memory allocation,parallel computing)..
+      - cons:
+        - require more complex coding ->when complex flows  are included.
+        - less  initiative than dynamic  as  it is  defined before running.
+  
+  - Computational Graphs in both Pytorch,Tensorflow:
+      - Pytorch -> dynamic graphes are used by default.
+      - Tensorflow ->..............................
+   
+-  the end of  this course:
+      - some words for the last of  the pdf may benefit you related to pytorch;
+        - torchvision->tensorflowlibrary are used for computer vision .
+        - Data Loading -> data is loaded using  dataset+dataloader .
+        - Methods to  construct datasets  ->torchvision   used  to     construct it (datasets) like:MNIST,CIFAR10,100,ImageNet.
+       
+        - Model   construction.
+        - forward computation.=>model calc backword  propagation  based on gradiend+forward to compute
+        - two-dimensional convolution layer 
+        - Max Pooling.
+        - Recurrent Neural Network.
+        - Activation functions with pytorch like (softmax,Relu,LeakyRelu...)
+        - Loss functions ->(L1 loss,Mean square error loss,Cross entropy loss,Binary cross  entropy loss,....)
+        - pytorch   optimizers -> SGD ,Adam,AdaGrad,AdamW,RMSPROP
+        - image  classification   depend on supervised   learning .
+        - <img width="940" height="253" alt="image" src="https://github.com/user-attachments/assets/3824fde0-9c18-4af2-96a9-ea8f9b358cd8" />
+          - pre-processing-> clean  data...
+          - Model training ->
+            - train model   on dataset from scratch
+            - or pre-trained model ->bring pre-trained model+train it  on this dataset.
+            - then Model loading+Prediction
+            - <img width="451" height="395" alt="image" src="https://github.com/user-attachments/assets/235aeb07-a1f6-4af3-99b0-63c1d6c8aab0" />
+              - now  after training ->Model deployment.
+              - then: Model  compression in order to reduce the size of the  model as best as it's can.
+              - How to  compress model:
+                - using model pruning ->  in  order to reduce the the noise while calculating  the new parameters.
+                - using Knowledge Distillation:
+                  - extract useful info from the complex model -> then after training it will build small  network  connected with complex system.
+              - Common deployment tools:
+                - LIama.cpp
+            - Tensor  parallelism(to make parallelism  at tensor -> you   can use  these two way):
+              - Row-wise  weight
+              - column-wise weight
+            - This is how pipeline  parallelism look like:
+              - <img width="904" height="279" alt="image" src="https://github.com/user-attachments/assets/d8b88dbd-b36e-4960-b7f3-b24dca90dfca" />
+            - Supervised Fine-Tuning (SFT);
+              - pre-trained model is trained  using new  dataset->then new dataset  will generated.
+              - then we make the output layer for this new dataset  and then  we train the target  model  to the output layer.
+              - other layers are fine-tuned   using  the source model's parameters.
+            - What is the Adapter tuning?
+              - you train model on   specific part and make the  other parts frozen ->this lower the  costs of  computing powers.
+              - <img width="327" height="319" alt="image" src="https://github.com/user-attachments/assets/02d68457-fcd5-4111-9a30-81f028de2fa3" />
+            -  What  is the prefix tuning?
+              -  input  we use it's tokens  and then update it while  the othet token frozen.
+            -  What is  the Prompt Tuning?
+              -  
