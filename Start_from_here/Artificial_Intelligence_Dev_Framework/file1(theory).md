@@ -183,5 +183,18 @@ Another advantages:
               - <img width="327" height="319" alt="image" src="https://github.com/user-attachments/assets/02d68457-fcd5-4111-9a30-81f028de2fa3" />
             -  What  is the prefix tuning?
               -  input  we use it's tokens  and then update it while  the othet token frozen.
-            -  What is  the Prompt Tuning?
-              -  
+            - What is  the Prompt Tuning?
+              -  it's simply add prompt tokens at input layer + removing the needs for  MLP to handle training issue.
+              -  pre-trained parameters  stay  fixed + it took some tokens with  the prompt  one in order to build the whole  result.
+              -  <img width="485" height="247" alt="image" src="https://github.com/user-attachments/assets/44569f9a-af08-4cf9-a54c-82d8ecf0e6d0" />
+
+            - What is the  LORA tunning(Low-Rank Adaption of large language Models):
+              - in this type -> pre-trained models are frozen  + replaced with Metrics A,B
+                - then  A+B are updated.
+              - steps:
+                -   reducing A+increasing B
+                -   model's input+output sizes  the same
+                  -   then  A,B are merged  with PLM.
+                -   metrics A ->starts with Gaussian values.
+                -   metrics B -> starts  with 0 to keep   the bypass metrics at 0.
+                -   
